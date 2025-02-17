@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: auto; /* Isso impede a rolagem na página */
+    position: relative; /* Adiciona contexto para elementos posicionados */
+
+}
+
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 0 20px 10px rgb(255, 255, 255);
+    opacity: 0.5;
+    border-style: dashed;
+    animation: twinkle 2s infinite alternate, move 1.5s infinite alternate;
+}
+
+/* Animações */
+@keyframes twinkle {
+    0% { opacity: 0.2; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.1); }
+    100% { opacity: 0.2; transform: scale(1); }
+}
+
+@keyframes move {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+header {
+    background-color: #24292e;
+    color: #ffffff;
+    padding: 10px 20px;
+    position: relative; /* Para garantir que fique acima do fundo */
+    z-index: 1; /* Fica acima do fundo */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2.2dvb;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Garante que fique acima do fundo */
+    z-index: 1; /* Fica acima do fundo */
+    overflow: auto; /* Permite rolagem se o conteúdo exceder a altura */
+    max-height: calc(100vh - 40px); /* Ajusta para não exceder a altura da tela */
+box-shadow: 0 10px 20px rgb(0, 0, 0) ;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 5px;
+    color: #24292e; /* Cor para os títulos */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    max-height: 340px; /* Ajuste a altura máxima se necessário */
+    border-radius: 10%;
+    margin: 20px 20px 20px 10px; /* Margens: cima, direita, baixo, esquerda */
+    box-shadow: 0 10px 20px rgb(0, 0, 0);
+
+}
+
+
+.pofo{
+ width: 100px;
+ border-radius: 60px;
+ display: block;
+ margin-left: 70%;
+ box-shadow: 0 10px 20px rgb(0, 0, 0);
+
+}

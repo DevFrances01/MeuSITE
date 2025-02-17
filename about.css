@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+
+}
+
+
+header {
+    background-color: #24292e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px; /* Limita a largura máxima das seções */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+a {
+font-size: 30px;
+color: white;
+margin: 10px;
+font-style: oblique;
+
+}
+
+a:hover {
+    color: #aaa3a3; /* Cor ao passar o mouse */
+
+}
+
+p {
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.6; /* Melhor espaçamento entre linhas */
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px; /* Tamanho maior para cabeçalhos */
+    margin-bottom: 15px; /* Espaço abaixo do cabeçalho */
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50;
+      font-size: 30px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px; /* Espaçamento interno */
+}
+
+.gallery-container img {
+    margin: 10px;
+    max-width: 100%; /* Limita a largura máxima ao contêiner */
+    height: auto; /* Mantém a proporção */
+    max-height: 300px; /* Define uma altura máxima se necessário */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza a animação */
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05); /* Aumenta a escala ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra mais pronunciada */
+}
+#clock{
+color: white;
+    
+}
+#clock:hover{
+    font-style: italic;
+}
