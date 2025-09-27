@@ -4,7 +4,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     overflow: hidden; /* Para ocultar as barras de rolagem */
-    background-color: #f0f0f0;
+    background-color: #fff9f9;
     font-family: "Mochiy Pop One", sans-serif;
 }
 
@@ -35,22 +35,7 @@ nav a:hover {
     font-style: italic;
 }
 
-.circle {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    background-image: url(12.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: pulse 2s infinite;
-box-shadow:  0px 20px 30px  rgb(0, 45, 192);
-    
-}
+
 p{
     text-align: center;
 }
